@@ -1,0 +1,190 @@
+@mixin fz($font-size, $line-height) {
+  font-size: calc($font-size / 10)+rem;
+  line-height: calc($line-height / $font-size);
+}
+
+@function per($design_width_psd) {
+  $per: percentage($design_width_psd / 1398);
+  @return #{$per};
+}
+
+@function vw($design_width_psd) {
+  $vw: calc($design-width-psd / 375) * 100;
+  @return #{$vw}vw;
+}
+
+@function vw_pc($design_width_psd) {
+  $vw: calc($design-width-psd / 1398) * 100;
+  @return #{$vw}vw;
+}
+
+$COLOR_GRAY: #ABABAB;
+$COLOR_RED: #AC2D37;
+
+.lp-ex {
+  .img-fit {
+    font-family: "object-fit: cover;";
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .bg-gray {
+    background: $COLOR_GRAY;
+  }
+
+  .ex-mv {
+    position: relative;
+
+    &__bg {
+      height: calc(100vh - 104px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 57px;
+      top: vw_pc(57);
+      left: 0;
+      width: 324px;
+      max-width: 30%;
+    }
+  }
+
+  .ex-intro {
+    padding: 15px 0;
+
+    .nav.bnav {
+      margin-top: 0;
+      color: #000;
+    }
+
+    .nav.bnav .bnav-lists>li:not(:first-child):before {
+      color: #000;
+    }
+
+    &__inner {
+      padding: 0 40px;
+    }
+
+    &__120 {}
+
+    &__headline {}
+
+    &__ttl {}
+
+    &__list {}
+
+    &__item {
+      figure {}
+
+      h4 {}
+
+      p {}
+    }
+
+    &__movie {
+      video {}
+    }
+  }
+
+  .ex-point {
+    text-align: center;
+
+    &__inner {}
+
+    &__headline {
+      .num {}
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 33.3333%;
+      flex-shrink: 0;
+    }
+
+    &__pht {}
+
+    &__desc {}
+
+    &__ttl {
+      .fz-lg {
+        display: block;
+      }
+    }
+
+    &__hdg {}
+
+    &__copy {}
+  }
+
+  .ex-product {
+    text-align: center;
+
+    &__headline {}
+
+    &__units {}
+
+    .ex-p-item {}
+
+    .ex-p-color {
+      .c-hl {
+        color: $COLOR_RED;
+      }
+    }
+
+    .ex-p-photo {}
+
+    .ex-p-list-size {
+      li {}
+
+      a {
+        .fz-lg {}
+      }
+    }
+
+    .ex-p-btn {
+      a {}
+    }
+
+    &__row {
+      display: flex;
+      justify-content: center;
+
+      &.row-3-col {}
+    }
+
+    &__unit {
+      &:nth-child(even) {
+        background: $COLOR_GRAY;
+      }
+
+      &:nth-child(odd) {
+        background: #E5E5E5;
+      }
+
+      &.unit-01 {}
+
+      &.unit-02 {}
+
+      &.unit-03 {}
+
+      &.unit-04 {}
+    }
+  }
+
+  .ex-product-head {
+    text-align: center;
+
+    &__headline {}
+
+    &__list {}
+  }
+}

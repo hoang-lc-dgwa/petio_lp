@@ -1,0 +1,74 @@
+.lp-ex .img-fit {
+  font-family: "object-fit: cover;";
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.lp-ex .bg-gray {
+  background: #ABABAB;
+}
+.lp-ex .ex-mv {
+  position: relative;
+}
+.lp-ex .ex-mv__bg {
+  height: calc(100vh - 104px);
+  position: relative;
+  overflow: hidden;
+}
+.lp-ex .ex-mv__logo {
+  position: absolute;
+  top: 57px;
+  top: 4.0772532189vw;
+  left: 0;
+  width: 324px;
+  max-width: 30%;
+}
+.lp-ex .ex-intro {
+  padding: 15px 0;
+}
+.lp-ex .ex-intro .nav.bnav {
+  margin-top: 0;
+  color: #000;
+}
+.lp-ex .ex-intro .nav.bnav .bnav-lists > li:not(:first-child):before {
+  color: #000;
+}
+.lp-ex .ex-intro__inner {
+  padding: 0 40px;
+}
+.lp-ex .ex-point {
+  text-align: center;
+}
+.lp-ex .ex-point__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.lp-ex .ex-point__item {
+  width: 33.3333%;
+  flex-shrink: 0;
+}
+.lp-ex .ex-point__ttl .fz-lg {
+  display: block;
+}
+.lp-ex .ex-product {
+  text-align: center;
+}
+.lp-ex .ex-product .ex-p-color .c-hl {
+  color: #AC2D37;
+}
+.lp-ex .ex-product__row {
+  display: flex;
+  justify-content: center;
+}
+.lp-ex .ex-product__unit:nth-child(even) {
+  background: #ABABAB;
+}
+.lp-ex .ex-product__unit:nth-child(odd) {
+  background: #E5E5E5;
+}
+.lp-ex .ex-product-head {
+  text-align: center;
+}
