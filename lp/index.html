@@ -729,6 +729,16 @@
     </header>
     <!-- /header -->
     <main class="contents lp-ex">
+      <script>
+        (function (d) {
+          var config = {
+            kitId: 'byn5xtl',
+            scriptTimeout: 3000,
+            async: true
+          },
+            h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+      </script>
       <div class="ex-mv">
         <div class="ex-mv__bg"><img src="./img/mv.jpg" alt="" class="img-fit"></div>
         <div class="ex-mv__logo"><img src="./img/mv_logo.svg" alt=""></div>
@@ -744,7 +754,7 @@
         <div class="ex-intro__inner">
           <div class="ex-intro__120">
             <h2 class="ex-intro__headline"><img src="./img/title_120.svg" alt="120% ペティオのリールリードで 楽しむお散歩ライフ!"></h2>
-            <p class="ex-intro__copy">愛犬とのお散歩をより楽しく快適にすることを目指し誕生した「ＲeelLead EX」<br>愛犬もオーナー様もより自然に動き回ることで毎日のお散歩をより楽しい時間へと誘います。細部までこだわって開発したこの商品は当社史上最もスムーズにリードの出し入れができ、ブレーキも軽い力で瞬時に作動します。愛犬やユーザー様の感覚に合わせ自由に長さが調整でき、暗い夜道でも伸縮したリードが見やすいのも特長です。また、ストラップ付なので排便処理時にもリードを離さず対応が可能！あなたもぜひ「ＲeelLead EX」で愛犬とのお散歩ライフを楽しみましょう！</p>
+            <p class="ex-intro__copy">愛犬とのお散歩をより楽しく快適にすることを目指し誕生した「ＲeelLead EX」愛犬もオーナー様もより自然に動き回ることで毎日のお散歩をより楽しい時間へと誘います。細部までこだわって開発したこの商品は当社史上最もスムーズにリードの出し入れができ、ブレーキも軽い力で瞬時に作動します。愛犬やユーザー様の感覚に合わせ自由に長さが調整でき、暗い夜道でも伸縮したリードが見やすいのも特長です。また、ストラップ付なので排便処理時にもリードを離さず対応が可能！あなたもぜひ「ＲeelLead EX」で愛犬とのお散歩ライフを楽しみましょう！</p>
             <h3 class="ex-intro__ttl">Product</h3>
             <div class="ex-intro__list">
               <div class="ex-intro__item">
@@ -829,18 +839,18 @@
               <h3 class="ex-p-color"><span class="c-hl">Color</span>レッド</h3>
               <div class="ex-p-photo"><img src="./img/product_img01_01.png" alt="レッド"></div>
               <ul class="ex-p-list-size">
-                <li><a href="#"><span class="fz-lg">S</span> SIZE</a></li>
-                <li><a href="#"><span class="fz-lg">M</span> SIZE</a></li>
-                <li><a href="#"><span class="fz-lg">L</span> SIZE</a></li>
+                <li><a href="#"><span class="fz-lg">S</span><span class="fz-sm">SIZE</span></a></li>
+                <li><a href="#"><span class="fz-lg">M</span><span class="fz-sm">SIZE</span></a></li>
+                <li><a href="#"><span class="fz-lg">L</span><span class="fz-sm">SIZE</span></a></li>
               </ul>
             </div>
             <div class="ex-p-item">
               <h3 class="ex-p-color"><span class="c-hl">Color</span>グレー</h3>
               <div class="ex-p-photo"><img src="./img/product_img01_02.png" alt="グレー"></div>
               <ul class="ex-p-list-size">
-                <li><a href="#"><span class="fz-lg">S</span> SIZE</a></li>
-                <li><a href="#"><span class="fz-lg">M</span> SIZE</a></li>
-                <li><a href="#"><span class="fz-lg">L</span> SIZE</a></li>
+                <li><a href="#"><span class="fz-lg">S</span><span class="fz-sm">SIZE</span></a></li>
+                <li><a href="#"><span class="fz-lg">M</span><span class="fz-sm">SIZE</span></a></li>
+                <li><a href="#"><span class="fz-lg">L</span><span class="fz-sm">SIZE</span></a></li>
               </ul>
             </div>
           </div>
@@ -849,28 +859,28 @@
       <!-- /ex-product-head -->
       <div class="ex-product">
         <h2 class="ex-product__headline">リールリードシリーズ展開</h2>
-        <div class="ex-product__unit">
+        <div class="ex-product__units">
           <div class="ex-product__unit unit-01">
             <div class="ex-product__inner">
-              <h3 class="ex-product__ttl"><img src="./img/title_air.svg" alt=""></h3>
+              <h3 class="ex-product__ttl"><img src="./img/title_air.svg" alt="Reel Lead® AIR"></h3>
               <p class="ex-product__copy">さらなる軽量化を重視＆<br>ニュアンスカラーとドットが可愛い</p>
-              <div class="ex-product__row">
+              <div class="ex-product__row row-2-col">
                 <div class="ex-p-item">
                   <div class="ex-p-photo"><img src="./img/product_img02_01.png" alt="ブルー"></div>
                   <h3 class="ex-p-color"><span class="c-hl">Color</span>ブルー</h3>
                   <ul class="ex-p-list-size">
-                    <li><a href="#"><span class="fz-lg">S</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">M</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">L</span> SIZE</a></li>
+                    <li><a href="#"><span class="fz-lg">S</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">M</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">L</span><span class="fz-sm">SIZE</span></a></li>
                   </ul>
                 </div>
                 <div class="ex-p-item">
                   <div class="ex-p-photo"><img src="./img/product_img02_02.png" alt="ピンク"></div>
                   <h3 class="ex-p-color"><span class="c-hl">Color</span>ピンク</h3>
                   <ul class="ex-p-list-size">
-                    <li><a href="#"><span class="fz-lg">S</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">M</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">L</span> SIZE</a></li>
+                    <li><a href="#"><span class="fz-lg">S</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">M</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">L</span><span class="fz-sm">SIZE</span></a></li>
                   </ul>
                 </div>
               </div>
@@ -878,34 +888,34 @@
           </div>
           <div class="ex-product__unit unit-02">
             <div class="ex-product__inner">
-              <h3 class="ex-product__ttl"><img src="./img/title_smart.svg" alt=""></h3>
+              <h3 class="ex-product__ttl"><img src="./img/title_smart.svg" alt="Style Trainer Reel Lead® Smart Control"></h3>
               <p class="ex-product__copy">安心して散歩ができるタフなボディ<br>持ちやすいハンドル形状<br>コントロールしやすい操作系統</p>
-              <div class="ex-product__row row-3-col">
+              <div class="ex-product__row">
                 <div class="ex-p-item">
                   <div class="ex-p-photo"><img src="./img/product_img03_01.png" alt="レッド"></div>
                   <h3 class="ex-p-color"><span class="c-hl">Color</span>レッド</h3>
                   <ul class="ex-p-list-size">
-                    <li><a href="#"><span class="fz-lg">S</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">M</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">L</span> SIZE</a></li>
+                    <li><a href="#"><span class="fz-lg">S</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">M</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">L</span><span class="fz-sm">SIZE</span></a></li>
                   </ul>
                 </div>
                 <div class="ex-p-item">
                   <div class="ex-p-photo"><img src="./img/product_img03_02.png" alt="ホワイト×ピンク"></div>
                   <h3 class="ex-p-color"><span class="c-hl">Color</span>ホワイト×ピンク</h3>
                   <ul class="ex-p-list-size">
-                    <li><a href="#"><span class="fz-lg">S</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">M</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">L</span> SIZE</a></li>
+                    <li><a href="#"><span class="fz-lg">S</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">M</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">L</span><span class="fz-sm">SIZE</span></a></li>
                   </ul>
                 </div>
                 <div class="ex-p-item">
                   <div class="ex-p-photo"><img src="./img/product_img03_03.png" alt="ブラック×ライム"></div>
                   <h3 class="ex-p-color"><span class="c-hl">Color</span>ブラック×ライム</h3>
                   <ul class="ex-p-list-size">
-                    <li><a href="#"><span class="fz-lg">S</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">M</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">L</span> SIZE</a></li>
+                    <li><a href="#"><span class="fz-lg">S</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">M</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">L</span><span class="fz-sm">SIZE</span></a></li>
                   </ul>
                 </div>
               </div>
@@ -913,16 +923,16 @@
           </div>
           <div class="ex-product__unit unit-03">
             <div class="ex-product__inner">
-              <h3 class="ex-product__ttl"><img src="./img/title_night.svg" alt=""></h3>
+              <h3 class="ex-product__ttl"><img src="./img/title_night.svg" alt="Reel Lead® Smart Control Night Warker"></h3>
               <p class="ex-product__copy">超高輝度ＬＥＤライトを搭載した伸縮式リード<br>反射テープ採用で、薄暗い時間帯や夜間の散歩に便利！</p>
               <div class="ex-product__row">
                 <div class="ex-p-item">
                   <div class="ex-p-photo"><img src="./img/product_img04_01.png" alt="ワインレッド"></div>
                   <h3 class="ex-p-color"><span class="c-hl">Color</span>ワインレッド</h3>
                   <ul class="ex-p-list-size">
-                    <li><a href="#"><span class="fz-lg">S</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">M</span> SIZE</a></li>
-                    <li><a href="#"><span class="fz-lg">L</span> SIZE</a></li>
+                    <li><a href="#"><span class="fz-lg">S</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">M</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">L</span><span class="fz-sm">SIZE</span></a></li>
                   </ul>
                 </div>
               </div>
@@ -930,21 +940,47 @@
           </div>
           <div class="ex-product__unit unit-04">
             <div class="ex-product__inner">
-              <h3 class="ex-product__ttl"><img src="./img/title_handy.svg" alt=""></h3>
-              <p class="ex-product__copy">手にすっぽりおさまるコンパクトタイプのリールリード<br>トリガー式ブレーキ、安心のストラップ、夜でも安心の反射ロープを搭載</p>
-              <div class="ex-product__row row-3-col">
+              <h3 class="ex-product__ttl"><img src="./img/title_road.svg" alt="Reel Lead® Road リールリード ロード"></h3>
+              <p class="ex-product__copy">夜でも安心の反射テープ、<br>手に優しいソフトグリップを採用</p>
+              <div class="ex-product__row row-2-col">
                 <div class="ex-p-item">
-                  <div class="ex-p-photo"><img src="./img/product_img05_01.png" alt="ホワイト"></div>
-                  <h3 class="ex-p-color"><span class="c-hl">Color</span>ホワイト</h3>
-                  <div class="ex-p-btn"><a href="#">商品ページへ</a></div>
+                  <div class="ex-p-photo"><img src="./img/product_img05_01.png" alt="ブルー"></div>
+                  <h3 class="ex-p-color"><span class="c-hl">Color</span>ブルー</h3>
+                  <ul class="ex-p-list-size">
+                    <li><a href="#"><span class="fz-lg">S</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">M</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">L</span><span class="fz-sm">SIZE</span></a></li>
+                  </ul>
                 </div>
                 <div class="ex-p-item">
                   <div class="ex-p-photo"><img src="./img/product_img05_02.png" alt="レッド"></div>
                   <h3 class="ex-p-color"><span class="c-hl">Color</span>レッド</h3>
+                  <ul class="ex-p-list-size">
+                    <li><a href="#"><span class="fz-lg">S</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">M</span><span class="fz-sm">SIZE</span></a></li>
+                    <li><a href="#"><span class="fz-lg">L</span><span class="fz-sm">SIZE</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ex-product__unit unit-05">
+            <div class="ex-product__inner">
+              <h3 class="ex-product__ttl"><img src="./img/title_handy.svg" alt="Reel Lead® Handy leve"></h3>
+              <p class="ex-product__copy">手にすっぽりおさまるコンパクトタイプのリールリード<br>トリガー式ブレーキ、安心のストラップ、夜でも安心の反射ロープを搭載</p>
+              <div class="ex-product__row">
+                <div class="ex-p-item">
+                  <div class="ex-p-photo"><img src="./img/product_img06_01.png" alt="ホワイト"></div>
+                  <h3 class="ex-p-color"><span class="c-hl">Color</span>ホワイト</h3>
                   <div class="ex-p-btn"><a href="#">商品ページへ</a></div>
                 </div>
                 <div class="ex-p-item">
-                  <div class="ex-p-photo"><img src="./img/product_img05_03.png" alt="ブルー"></div>
+                  <div class="ex-p-photo"><img src="./img/product_img06_02.png" alt="レッド"></div>
+                  <h3 class="ex-p-color"><span class="c-hl">Color</span>レッド</h3>
+                  <div class="ex-p-btn"><a href="#">商品ページへ</a></div>
+                </div>
+                <div class="ex-p-item">
+                  <div class="ex-p-photo"><img src="./img/product_img06_03.png" alt="ブルー"></div>
                   <h3 class="ex-p-color"><span class="c-hl">Color</span>ブルー</h3>
                   <div class="ex-p-btn"><a href="#">商品ページへ</a></div>
                 </div>
