@@ -54,13 +54,13 @@ $WIDTH_SP: 464;
   position: relative;
 
   @media screen and (min-width: 769px) {
-    .sp {
+    .for-sp {
       display: none !important;
     }
   }
 
   @media screen and (max-width: 768px) {
-    .pc {
+    .for-pc {
       display: none !important;
     }
   }

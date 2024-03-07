@@ -9,12 +9,12 @@
   position: relative;
 }
 @media screen and (min-width: 769px) {
-  .lp-ex .sp {
+  .lp-ex .for-sp {
     display: none !important;
   }
 }
 @media screen and (max-width: 768px) {
-  .lp-ex .pc {
+  .lp-ex .for-pc {
     display: none !important;
   }
 }
