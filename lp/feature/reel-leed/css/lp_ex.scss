@@ -277,9 +277,9 @@ $WIDTH_SP: 464;
     a {
       display: flex;
       align-items: flex-end;
-      background: #646464;
+      color: #000;
+      background: #e4de52;
       border-radius: 44px;
-      color: #fff;
       @include fz(18, 30);
       padding: 0 23px;
       gap: 5px;
@@ -298,8 +298,8 @@ $WIDTH_SP: 464;
 
       &:hover {
         opacity: 1;
-        color: #000;
-        background: #e4de52;
+        background: #646464;
+        color: #fff;
       }
     }
   }
@@ -308,19 +308,19 @@ $WIDTH_SP: 464;
     margin-top: 20px;
 
     a {
-      background: #646464;
+      color: #000;
+      background: #e4de52;
       @include fz(24, 44);
       border-radius: 44px;
       padding: 0 35px;
-      color: #fff;
       transition: 0.3s;
       display: inline-flex;
       font-weight: 600;
 
       &:hover {
         opacity: 1;
-        color: #000;
-        background: #e4de52;
+        color: #fff;
+        background: #646464;
       }
     }
   }
@@ -770,6 +770,61 @@ $WIDTH_SP: 464;
 
       .ex-p-photo {
         max-width: 86%;
+      }
+    }
+  }
+}
+
+
+/** animation **/
+.js-view {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: all 0.8s;
+
+  &.is-show {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.slide-anime {
+  -webkit-clip-path: inset(0 100% 0 0);
+  clip-path: inset(0 100% 0 0);
+  -webkit-transition: 1s cubic-bezier(0.37, 0, 0.63, 1);
+  transition: 1s cubic-bezier(0.37, 0, 0.63, 1);
+  -webkit-transition-property: -webkit-clip-path;
+  transition-property: -webkit-clip-path;
+  transition-property: clip-path;
+  transition-property: clip-path, -webkit-clip-path;
+}
+
+.slide-anime.is-show {
+  -webkit-clip-path: inset(0);
+  clip-path: inset(0);
+}
+
+.lp-ex {
+  .ex-intro__item {
+    @for $i from 1 through 2 {
+      &:nth-child(#{$i}) {
+        transition-delay: #{($i * 0.1)}s;
+      }
+    }
+  }
+
+  .ex-point__item {
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        transition-delay: #{($i * 0.1)}s;
+      }
+    }
+  }
+
+  .ex-p-item {
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        transition-delay: #{($i * 0.1)}s;
       }
     }
   }
